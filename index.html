@@ -1,0 +1,269 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+    <title>Калькулятор калорий для Надечки</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!--[if lte IE 8]>
+    <script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="assets/css/main.css"/>
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="assets/css/ie8.css"/><![endif]-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+<div id="content">
+    <div class="inner">
+        <article class="box post post-excerpt">
+
+            <header>
+                <h2><a href="#">Калькулятор калорий</a></h2>
+                <p>Приведены данные калорийности на 100 грамм продукта</p>
+            </header>
+
+            <div class="image featured">
+
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>Наименование продукта</th>
+                        <th>Белки, г</th>
+                        <th>Жиры, г</th>
+                        <th>Углеводы, г</th>
+                        <th>Калории, Ккал</th>
+                    </tr>
+                    </thead>
+                    <tbody class="result">
+                    <tr id="sum">
+                        <td>Сумма</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </article>
+    </div>
+</div>
+
+<div id="sidebar">
+
+    <h1 id="logo"><a href="#">App for Nadechka</a></h1>
+
+    <nav id="nav">
+        <ul>
+            <li><a class="category" title="Крупы и каши">Крупы и каши</a>
+                <div class="products-checkboxes" title="Крупы и каши">
+                    <div class="ind"><input type="checkbox" value="Булгур" title=""><span class="ind">Булгур</span>
+                    </div>
+                    <div class="ind"><input type="checkbox" value="Геркулес" title=""><span class="ind">Геркулес</span>
+                    </div>
+                    <div class="ind"><input type="checkbox" value="Греча" title=""><span class="ind">Греча</span></div>
+                    <div class="ind"><input type="checkbox" value="Киноа" title=""><span class="ind">Киноа</span></div>
+                    <div class="ind"><input type="checkbox" value="Кус-кус" title=""><span class="ind">Кус-кус</span>
+                    </div>
+                    <div class="ind"><input type="checkbox" value="Манная крупа" title=""><span
+                            class="ind">Манная крупа</span></div>
+                    <div class="ind"><input type="checkbox" value="Мюсли" title=""><span class="ind">Мюсли</span></div>
+                    <div class="ind"><input type="checkbox" value="Пшено" title=""><span class="ind">Пшено</span></div>
+                    <div class="ind"><input type="checkbox" value="Рис белый" title=""><span
+                            class="ind">Рис белый</span></div>
+                    <div class="ind"><input type="checkbox" value="Рис бурый" title=""><span
+                            class="ind">Рис бурый</span></div>
+                    <div class="ind"><input type="checkbox" value="Толокно" title=""><span class="ind">Толокно</span>
+                    </div>
+                    <div class="ind"><input type="checkbox" value="Хлопья" title=""><span class="ind">Хлопья</span>
+                    </div>
+                </div>
+            </li>
+            <li><a class="category" title="Масла">Масла</a>
+                <div class="products-checkboxes" title="Масла">
+                    <div class="ind"><input type="checkbox" value="Арахисовое масло" title=""><span class="ind">Арахисовое</span>
+                    </div>
+                    <div class="ind"><input type="checkbox" value="Горчичное масло" title=""><span
+                            class="ind">Горчичное</span></div>
+                    <div class="ind"><input type="checkbox" value="Кунжутное масло" title=""><span
+                            class="ind">Кунжутное</span></div>
+                    <div class="ind"><input type="checkbox" value="Сливочное масло" title=""><span
+                            class="ind">Сливочное</span></div>
+                    <div class="ind"><input type="checkbox" value="Топленое масло" title=""><span
+                            class="ind">Топленое</span></div>
+                </div>
+            </li>
+            <li><a class="category" title="Молоко и молочная продукция">Молочная продукция</a>
+                <div class="products-checkboxes" title="Молоко и молочная продукция">
+                    <div class="ind"><input type="checkbox" value="Кефир 1%" title=""><span class="ind">Кефир 1%</span>
+                    </div>
+                    <div class="ind"><input type="checkbox" value="Кефир 2%" title=""><span class="ind">Кефир 2%</span>
+                    </div>
+                    <div class="ind"><input type="checkbox" value="Кефир 2,5%" title=""><span
+                            class="ind">Кефир 2,5%</span></div>
+                    <div class="ind"><input type="checkbox" value="Шоколадное молоко" title=""><span class="ind">Шок. молоко</span>
+                    </div>
+                    <div class="ind"><input type="checkbox" value="Мацони" title=""><span class="ind">Мацони</span>
+                    </div>
+                    <div class="ind"><input type="checkbox" value="Молоко 2,5%" title=""><span
+                            class="ind">Молоко 2,5%</span></div>
+                    <div class="ind"><input type="checkbox" value="Молоко сгущенное" title=""><span class="ind">Молоко сгущенное</span>
+                    </div>
+                    <div class="ind"><input type="checkbox" value="Молоко сухое" title=""><span
+                            class="ind">Молоко сухое</span></div>
+                    <div class="ind"><input type="checkbox" value="Молоко топленое" title=""><span class="ind">Молоко топленое</span>
+                    </div>
+                    <div class="ind"><input type="checkbox" value="Ряженка 3,2%" title=""><span
+                            class="ind">Ряженка 3,2%</span></div>
+                    <div class="ind"><input type="checkbox" value="Сметана 20%" title=""><span
+                            class="ind">Сметана 20%</span></div>
+                </div>
+            </li>
+            <li><a class="category" title="Овощи и зелень">Овощи и зелень</a>
+                <div class="products-checkboxes" title="Овощи и зелень">
+                    <div class="ind"><input type="checkbox" value="Кабачок жареный" title=""><span class="ind">Кабачок жареный</span>
+                    </div>
+                    <div class="ind"><input type="checkbox" value="Кабачок" title=""><span class="ind">Кабачок</span>
+                    </div>
+                    <div class="ind"><input type="checkbox" value="Капуста" title=""><span class="ind">Капуста</span>
+                    </div>
+                    <div class="ind"><input type="checkbox" value="Капуста цветная" title=""><span class="ind">Капуста цветная</span>
+                    </div>
+                    <div class="ind"><input type="checkbox" value="Капуста брокколи" title=""><span class="ind">Капуста брокколи</span>
+                    </div>
+                    <div class="ind"><input type="checkbox" value="Маслины" title=""><span class="ind">Маслины</span>
+                    </div>
+                    <div class="ind"><input type="checkbox" value="Морковь" title=""><span class="ind">Морковь</span>
+                    </div>
+                    <div class="ind"><input type="checkbox" value="Огурец" title=""><span class="ind">Огурец</span>
+                    </div>
+                    <div class="ind"><input type="checkbox" value="Оливки" title=""><span class="ind">Оливки</span>
+                    </div>
+                    <div class="ind"><input type="checkbox" value="Руккола" title=""><span class="ind">Руккола</span>
+                    </div>
+                    <div class="ind"><input type="checkbox" value="Салат Айсберг" title=""><span class="ind">Салат Айсберг</span>
+                    </div>
+                    <div class="ind"><input type="checkbox" value="Свекла" title=""><span class="ind">Свекла</span>
+                    </div>
+                    <div class="ind"><input type="checkbox" value="Сельдерей" title=""><span
+                            class="ind">Сельдерей</span></div>
+                    <div class="ind"><input type="checkbox" value="Томат" title=""><span class="ind">Томат</span></div>
+                    <div class="ind"><input type="checkbox" value="Тыква" title=""><span class="ind">Тыква</span></div>
+                    <div class="ind"><input type="checkbox" value="Укроп" title=""><span class="ind">Укроп</span></div>
+                    <div class="ind"><input type="checkbox" value="Фасоль стручковая" title=""><span
+                            class="ind">Фасоль</span></div>
+                    <div class="ind"><input type="checkbox" value="Чечевица красная" title=""><span
+                            class="ind">Чечевица</span></div>
+                    <div class="ind"><input type="checkbox" value="Шпинат" title=""><span class="ind">Шпинат</span>
+                    </div>
+                </div>
+            </li>
+            <li><a class="category" title="Орехи и сухофрукты">Орехи и сухофрукты</a>
+                <div class="products-checkboxes" title="Орехи и сухофрукты">
+                    <div class="ind"><input type="checkbox" value="Арахис" title=""><span class="ind">Арахис</span>
+                    </div>
+                    <div class="ind"><input type="checkbox" value="Вишня вяленая" title=""><span class="ind">Вишня вяленая</span>
+                    </div>
+                    <div class="ind"><input type="checkbox" value="Грецкий орех" title=""><span
+                            class="ind">Грецкий орех</span></div>
+                    <div class="ind"><input type="checkbox" value="Изюм" title=""><span class="ind">Изюм</span></div>
+                    <div class="ind"><input type="checkbox" value="Инжир" title=""><span class="ind">Инжир</span></div>
+                    <div class="ind"><input type="checkbox" value="Кешью" title=""><span class="ind">Кешью</span></div>
+                    <div class="ind"><input type="checkbox" value="Кунжут" title=""><span class="ind">Кунжут</span>
+                    </div>
+                    <div class="ind"><input type="checkbox" value="Курага" title=""><span class="ind">Курага</span>
+                    </div>
+                    <div class="ind"><input type="checkbox" value="Мак" title=""><span class="ind">Мак</span></div>
+                    <div class="ind"><input type="checkbox" value="Миндаль сладкий" title=""><span class="ind">Миндаль сладкий</span>
+                    </div>
+                    <div class="ind"><input type="checkbox" value="Семена льна" title=""><span
+                            class="ind">Семена льна</span></div>
+                    <div class="ind"><input type="checkbox" value="Семена укропа" title=""><span class="ind">Семена укропа</span>
+                    </div>
+                    <div class="ind"><input type="checkbox" value="Семена чиа" title=""><span
+                            class="ind">Семена чиа</span></div>
+                    <div class="ind"><input type="checkbox" value="Семена тыквы" title=""><span
+                            class="ind">Семена тыквы</span></div>
+                    <div class="ind"><input type="checkbox" value="Финики" title=""><span class="ind">Финики</span>
+                    </div>
+                    <div class="ind"><input type="checkbox" value="Фундук" title=""><span class="ind">Фундук</span>
+                    </div>
+                    <div class="ind"><input type="checkbox" value="Чернослив" title=""><span
+                            class="ind">Чернослив</span></div>
+                    <div class="ind"><input type="checkbox" value="Яблоки сушеные" title=""><span class="ind">Яблоки сушеные</span>
+                    </div>
+                    <div class="ind"><input type="checkbox" value="Ягоды годжи" title=""><span
+                            class="ind">Ягоды годжи</span></div>
+                </div>
+            </li>
+            <li><a class="category" title="Сыры и творог">Сыры и творог</a>
+                <div class="products-checkboxes" title="Сыры и творог">
+                    <div class="ind"><input type="checkbox" value="Сыр Адыгейский" title=""><span class="ind">Сыр Адыгейский</span>
+                    </div>
+                    <div class="ind"><input type="checkbox" value="Сыр Маасдам" title=""><span
+                            class="ind">Сыр Маасдам</span></div>
+                    <div class="ind"><input type="checkbox" value="Сыр Маскарпоне" title=""><span class="ind">Сыр Маскарпоне</span>
+                    </div>
+                    <div class="ind"><input type="checkbox" value="Сыр Сиртаки" title=""><span
+                            class="ind">Сыр Сиртаки</span></div>
+                    <div class="ind"><input type="checkbox" value="Сыр Фета" title=""><span class="ind">Сыр Фета</span>
+                    </div>
+                    <div class="ind"><input type="checkbox" value="Творог 5%" title=""><span
+                            class="ind">Творог 5%</span></div>
+                </div>
+            </li>
+            <li><a class="category" title="Фрукты">Фрукты</a>
+                <div class="products-checkboxes" title="Фрукты">
+                    <div class="ind"><input type="checkbox" value="Ананас" title=""><span class="ind">Ананас</span>
+                    </div>
+                    <div class="ind"><input type="checkbox" value="Апельсин" title=""><span class="ind">Апельсин</span>
+                    </div>
+                    <div class="ind"><input type="checkbox" value="Арбуз" title=""><span class="ind">Арбуз</span></div>
+                    <div class="ind"><input type="checkbox" value="Банан" title=""><span class="ind">Банан</span></div>
+                    <div class="ind"><input type="checkbox" value="Вишня замороженная" title=""><span class="ind">Вишня заморож.</span>
+                    </div>
+                    <div class="ind"><input type="checkbox" value="Грейпфрут" title=""><span
+                            class="ind">Грейпфрут</span></div>
+                    <div class="ind"><input type="checkbox" value="Киви" title=""><span class="ind">Киви</span></div>
+                    <div class="ind"><input type="checkbox" value="Лимон" title=""><span class="ind">Лимон</span></div>
+                    <div class="ind"><input type="checkbox" value="Манго" title=""><span class="ind">Манго</span></div>
+                    <div class="ind"><input type="checkbox" value="Мандарин" title=""><span class="ind">Мандарин</span>
+                    </div>
+                    <div class="ind"><input type="checkbox" value="Персик" title=""><span class="ind">Персик</span>
+                    </div>
+                    <div class="ind"><input type="checkbox" value="Помело" title=""><span class="ind">Помело</span>
+                    </div>
+                    <div class="ind"><input type="checkbox" value="Слива" title=""><span class="ind">Слива</span></div>
+                    <div class="ind"><input type="checkbox" value="Хурма" title=""><span class="ind">Хурма</span></div>
+                    <div class="ind"><input type="checkbox" value="Яблоко Голден" title=""><span class="ind">Яблоко Голден</span>
+                    </div>
+                </div>
+            </li>
+            <li><a class="category" title="Ягоды">Ягоды</a>
+                <div class="products-checkboxes" title="Ягоды">
+                    <div class="ind"><input type="checkbox" value="Брусника" title=""><span class="ind">Брусника</span>
+                    </div>
+                    <div class="ind"><input type="checkbox" value="Клубника" title=""><span class="ind">Клубника</span>
+                    </div>
+                    <div class="ind"><input type="checkbox" value="Смородина черная" title=""><span class="ind">Смородина черн.</span>
+                    </div>
+                    <div class="ind"><input type="checkbox" value="Облепиха" title=""><span class="ind">Облепиха</span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/skel.min.js"></script>
+<script src="assets/js/util.js"></script>
+<!--[if lte IE 8]>
+<script src="assets/js/ie/respond.min.js"></script><![endif]-->
+<script src="assets/js/main.js"></script>
+<script src="assets/js/calc.js"></script>
+</body>
+</html>
